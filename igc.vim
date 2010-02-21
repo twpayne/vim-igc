@@ -93,7 +93,7 @@ if version >= 508 || !exists("did_igc_syntax_inits")
   HiLink igcHH PreProc
   HiLink igcHdataSource igc1
   HiLink igcHrecordSubtype igc2
-  HiLink igcHrecordSubtypeText Ignore
+  HiLink igcHrecordSubtypeText Normal
   HiLink igcHvalue igc4
 
   HiLink igcL Comment
