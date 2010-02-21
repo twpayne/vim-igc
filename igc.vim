@@ -27,7 +27,7 @@ syn region igcBlatDD start="\%8c" end="\%10c" contained containedin=igcB
 syn region igcBlatMM start="\%10c" end="\%12c" contained containedin=igcB
 syn region igcBlatmmm start="\%12c" end="\%15c" contained containedin=igcB
 syn region igcBlatH start="\%15c" end="\%16c" contained containedin=igcB
-syn region igcBlonDD start="\%16c" end="\%19c" contained containedin=igcB
+syn region igcBlonDDD start="\%16c" end="\%19c" contained containedin=igcB
 syn region igcBlonMM start="\%19c" end="\%21c" contained containedin=igcB
 syn region igcBlonmmm start="\%21c" end="\%24c" contained containedin=igcB
 syn region igcBlonH start="\%24c" end="\%25c" contained containedin=igcB
@@ -41,7 +41,7 @@ syn region igcClatDD start="\%2c" end="\%4c" contained containedin=igcC
 syn region igcClatMM start="\%4c" end="\%6c" contained containedin=igcC
 syn region igcClatSS start="\%6c" end="\%9c" contained containedin=igcC
 syn region igcClatH start="\%9c" end="\%10c" contained containedin=igcC
-syn region igcClonDD start="\%10c" end="\%13c" contained containedin=igcC
+syn region igcClonDDD start="\%10c" end="\%13c" contained containedin=igcC
 syn region igcClonMM start="\%13c" end="\%15c" contained containedin=igcC
 syn region igcClonSS start="\%15c" end="\%18c" contained containedin=igcC
 syn region igcClonH start="\%18c" end="\%19c" contained containedin=igcC
@@ -92,7 +92,7 @@ if version >= 508 || !exists("did_igc_syntax_inits")
   HiLink igcBlatMM igc2
   HiLink igcBlatmmm igc3
   HiLink igcBlatH igc4
-  HiLink igcBlonDD igc1
+  HiLink igcBlonDDD igc1
   HiLink igcBlonMM igc2
   HiLink igcBlonmmm igc3
   HiLink igcBlonH igc4
@@ -106,7 +106,7 @@ if version >= 508 || !exists("did_igc_syntax_inits")
   HiLink igcClatMM igc2
   HiLink igcClatmmm igc3
   HiLink igcClatH igc4
-  HiLink igcClonDD igc1
+  HiLink igcClonDDD igc1
   HiLink igcClonMM igc2
   HiLink igcClonmmm igc3
   HiLink igcClonH igc4
