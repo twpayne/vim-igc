@@ -35,6 +35,18 @@ syn region igcBV start="\%25c" end="\%26c" contained containedin=igcB
 syn region igcBPalt start="\%26c" end="\%31c" contained containedin=igcB
 syn region igcBGalt start="\%31c" end="\%36c" contained containedin=igcB
 
+syn region igcC start="^C" end="$" keepend oneline
+syn region igcCC start="\%1c" end="\%2c" contained containedin=igcC
+syn region igcClatDD start="\%2c" end="\%4c" contained containedin=igcC
+syn region igcClatMM start="\%4c" end="\%6c" contained containedin=igcC
+syn region igcClatSS start="\%6c" end="\%9c" contained containedin=igcC
+syn region igcClatH start="\%9c" end="\%10c" contained containedin=igcC
+syn region igcClonDD start="\%10c" end="\%13c" contained containedin=igcC
+syn region igcClonMM start="\%13c" end="\%15c" contained containedin=igcC
+syn region igcClonSS start="\%15c" end="\%18c" contained containedin=igcC
+syn region igcClonH start="\%18c" end="\%19c" contained containedin=igcC
+syn region igcCrest start="\%19c" end="$" contained containedin=igcC
+
 syn region igcG start="^G" end="$" keepend oneline
 syn region igcGvalue start="." end="$" contained containedin=igcG
 syn region igcGG start="\%1c" end="\%2c" contained containedin=igcG
@@ -84,6 +96,17 @@ if version >= 508 || !exists("did_igc_syntax_inits")
   HiLink igcBPalt igc2
   HiLink igcBGalt igc1
   HiLink igcBrest Comment
+
+  HiLink igcCC PreProc
+  HiLink igcClatDD igc1
+  HiLink igcClatMM igc2
+  HiLink igcClatmmm igc3
+  HiLink igcClatH igc4
+  HiLink igcClonDD igc1
+  HiLink igcClonMM igc2
+  HiLink igcClonmmm igc3
+  HiLink igcClonH igc4
+  HiLink igcCrest Comment
 
   HiLink igcGG PreProc
   HiLink igcGvalue Ignore
