@@ -64,12 +64,10 @@ if version >= 508 || !exists("did_igc_syntax_inits")
   HiLink igc3 Identifer
   HiLink igc4 Constant
 
-  "HiLink igcA Statement
   HiLink igcAA PreProc
   HiLink igcATCC igc1
   HiLink igcAUID igc2
 
-  "HiLink igcB Normal
   HiLink igcBB PreProc
   HiLink igcBtimeHH igc1
   HiLink igcBtimeMM igc2
