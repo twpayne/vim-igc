@@ -109,7 +109,7 @@ if version >= 508 || !exists("did_igc_syntax_inits")
   HiLink igcCrest Comment
 
   HiLink igcGG PreProc
-  HiLink igcGvalue Ignore
+  HiLink igcGvalue Todo
 
   HiLink igcHH PreProc
   HiLink igcHdataSource igc1
