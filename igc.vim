@@ -58,6 +58,10 @@ syn region igcHdataSource start="\%2c" end="\%3c" contained containedin=igcH
 syn region igcHrecordSubtype start="\%3c" end="\%6c" contained containedin=igcH
 syn region igcHrecordSubtypeText start="\%6c" end=":" contained containedin=igcH
 
+syn region igcI start="^I" end="$" keepend oneline transparent
+syn region igcII start="\%1c" end="\%2c" contained containedin=igcI
+syn region igcIvalue start="\%2c" end="$" contained containedin=igcI
+
 syn region igcL start="^L" end="$" keepend oneline
 
 " Define the default highlighting.
@@ -116,6 +120,9 @@ if version >= 508 || !exists("did_igc_syntax_inits")
   HiLink igcHrecordSubtype igc2
   HiLink igcHrecordSubtypeText Normal
   HiLink igcHvalue igc4
+
+  HiLink igcII PreProc
+  HiLink igcIvalue Normal
 
   HiLink igcL Comment
 
