@@ -64,6 +64,12 @@ syn region igcHFDTEdataSource start="\%2c" end="\%3c" contained containedin=igcH
 syn region igcHFDTErecordSubtype start="\%3c" end="\%6c" contained containedin=igcHFDTE
 syn region igcHFDTEDDMMYY start="\%6c" end="\%12c" contained containedin=igcHFDTE
 
+syn region igcHFFXA start="^HFFXA" end="$" keepend oneline transparent
+syn region igcHFFXAH start="\%1c" end="\%2c" contained containedin=igcHFFXA
+syn region igcHFFXAdataSource start="\%2c" end="\%3c" contained containedin=igcHFFXA
+syn region igcHFFXArecordSubtype start="\%3c" end="\%6c" contained containedin=igcHFFXA
+syn region igcHFFXADDMMYY start="\%6c" end="$" contained containedin=igcHFFXA
+
 syn region igcI start="^I" end="$" keepend oneline transparent
 syn region igcII start="\%1c" end="\%2c" contained containedin=igcI
 syn region igcIvalue start="\%2c" end="$" contained containedin=igcI
@@ -131,6 +137,11 @@ if version >= 508 || !exists("did_igc_syntax_inits")
   HiLink igcHFDTEdataSource igc1
   HiLink igcHFDTErecordSubtype igc2
   HiLink igcHFDTEDDMMYY Constant
+
+  HiLink igcHFFXAH PreProc
+  HiLink igcHFFXAdataSource igc1
+  HiLink igcHFFXArecordSubtype igc2
+  HiLink igcHFFXADDMMYY Constant
 
   HiLink igcII PreProc
   HiLink igcIvalue Normal
