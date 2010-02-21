@@ -78,7 +78,7 @@ if version >= 508 || !exists("did_igc_syntax_inits")
   HiLink igc1 Statement
   HiLink igc2 Type
   HiLink igc3 Identifer
-  HiLink igc4 Constant
+  HiLink igc4 Special
 
   HiLink igcAA PreProc
   HiLink igcATCC igc1
@@ -119,7 +119,7 @@ if version >= 508 || !exists("did_igc_syntax_inits")
   HiLink igcHdataSource igc1
   HiLink igcHrecordSubtype igc2
   HiLink igcHrecordSubtypeText Normal
-  HiLink igcHvalue igc4
+  HiLink igcHvalue Constant
 
   HiLink igcII PreProc
   HiLink igcIvalue Normal
