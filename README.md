@@ -12,5 +12,5 @@ Installation
 
 2. Add the following lines to your `~/.vimrc`:
 
-	au BufNewFile,BufRead *.igc setlocal filetype=igc
-	au BufNewFile,BufRead *.IGC setlocal filetype=igc
+        au BufNewFile,BufRead *.igc setlocal filetype=igc
+        au BufNewFile,BufRead *.IGC setlocal filetype=igc
