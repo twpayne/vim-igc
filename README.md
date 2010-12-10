@@ -8,9 +8,4 @@ Copyright &copy; Tom Payne 2010
 Installation
 ============
 
-1. Copy `igc.vim` to `~/.vim/syntax`.
-
-2. Add the following lines to your `~/.vimrc`:
-
-        au BufNewFile,BufRead *.igc setlocal filetype=igc
-        au BufNewFile,BufRead *.IGC setlocal filetype=igc
+Copy these files into <tt>~/.vim</tt>, or the relevant system-wide location.
